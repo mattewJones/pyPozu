@@ -211,7 +211,7 @@
 			"file": "main.py",
 			"settings":
 			{
-				"buffer_size": 972,
+				"buffer_size": 1092,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -580,15 +580,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 972,
+						"buffer_size": 1092,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								999,
+								999
 							]
 						],
 						"settings":

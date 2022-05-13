@@ -22,11 +22,13 @@ class SampleData:
 
 
 def parseImages(rep: Path):
+	# un dictionnaire qui contiendra la liste des
+	# échantillons de chaque classe, indexée par son nom
     classes = defaultdict(list)
-    for file in rep.glob("*.jpg"):
+    for imgFile in rep.glob("*.jpg"):
         plt.figure()
-        plt.imshow(Image.open(file))
-        sample = SampleData(file)
+        plt.imshow(Image.open(imgFile))
+        sample = SampleData(imgFile)
         classes[sample.className].append(sample)
     return classes
 
@@ -36,7 +38,7 @@ db_dir = Path("./DB_RESIZED")
 classes = parseImages(db_dir)
 
 
-for cName, c in classes.items():
+for c in classes.values():
     for s in c:
         print(s.className)
         print(s.pose)
