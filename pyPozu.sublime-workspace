@@ -1,0 +1,706 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"retu",
+				"returnThis"
+			],
+			[
+				"this",
+				"returnThis"
+			],
+			[
+				"j",
+				"javascript"
+			],
+			[
+				"fre",
+				"freq_plot\tstatement"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"sta",
+				"startButton\tstatement"
+			],
+			[
+				"motor",
+				"motor\tstatement"
+			],
+			[
+				"Ex",
+				"Experiment\tclass"
+			],
+			[
+				"sca",
+				"scan_thz_pulse\tfunction"
+			],
+			[
+				"QtWidgets",
+				"QtWidgets\tmodule"
+			],
+			[
+				"s",
+				"show"
+			],
+			[
+				"random",
+				"random\tfunction"
+			],
+			[
+				"line_",
+				"line_X\tstatement"
+			],
+			[
+				"po",
+				"position_UI_test\tstatement"
+			],
+			[
+				"re",
+				"res_Theta"
+			],
+			[
+				"res",
+				"res_Y"
+			],
+			[
+				"sc",
+				"scan_delays"
+			],
+			[
+				"dela",
+				"scan_delays"
+			],
+			[
+				"tau",
+				"tauval"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"min-w",
+				"min-width\tproperty"
+			],
+			[
+				"border-b",
+				"border-bottom-style\tproperty"
+			],
+			[
+				"f",
+				"flex-start\talign-items"
+			],
+			[
+				"ali",
+				"align-self\tproperty"
+			],
+			[
+				"spa",
+				"space-between\tjustify-content"
+			],
+			[
+				"sp",
+				"space-around\tjustify-content"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"border",
+				"border-color\tproperty"
+			],
+			[
+				"bord",
+				"border-color\tproperty"
+			],
+			[
+				"bo",
+				"border-right\tproperty"
+			],
+			[
+				"bor",
+				"border-bottom\tproperty"
+			],
+			[
+				"boder",
+				"border-right\tproperty"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"fle",
+				"flex-start\talign-content"
+			],
+			[
+				"spac",
+				"space-between\tjustify-content"
+			],
+			[
+				"flex",
+				"flex-grow\tproperty"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"p",
+				"php\t<?php … ?>"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"h",
+				"html\thtml"
+			],
+			[
+				"met",
+				"meta\tTag"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"se",
+				"select\tTag"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"fo",
+				"font-size\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"u",
+				"ul\tTag"
+			],
+			[
+				"e",
+				"em\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.py",
+			"settings":
+			{
+				"buffer_size": 972,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: \t",
+				"Package Control: List Packages"
+			],
+			[
+				"Pack\t",
+				"Package Control: Install Package"
+			],
+			[
+				"ana",
+				"Anaconda: Run Current Test"
+			],
+			[
+				"anaconda: cons",
+				"Anaconda: Run Current Test"
+			],
+			[
+				"package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"plugi",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"term",
+				"Terminus: Close All"
+			],
+			[
+				"Pa",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: li",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"Te",
+				"Terminus: Close All"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				" package in",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"install package",
+				"Install Package Control"
+			],
+			[
+				"syntax : ",
+				"Set Syntax: YAML"
+			],
+			[
+				"syntax : lo",
+				"Set Syntax: LaTeX Log"
+			],
+			[
+				"sy tex",
+				"Set Syntax: TeX"
+			],
+			[
+				"syn tex",
+				"Set Syntax: TeX"
+			],
+			[
+				"syn te",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"syntax te",
+				"Set Syntax: TeX"
+			],
+			[
+				"Syntax te",
+				"Set Syntax: TeX"
+			],
+			[
+				"shi",
+				"Snippet: html"
+			],
+			[
+				"",
+				"Arithmetic"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 159.0,
+		"history":
+		[
+			"exit()",
+			"1+1",
+			"run"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/Pozu/data_analysis/dataAnalysis.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/THz_experiment/experiment.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/vieux/traitement_empreintes.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/proj foculs/foculs.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/proj foculs/eee.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/immondices lateC/LyC/macros/commandesCustom.tex",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/syntaxe générale/main.js",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/manip_html/main.js",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/syntaxe générale/main.html",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/manip_html/main.html",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/manip_html/style.css",
+		"/C/Users/lenovo/Desktop/petitesVideosPourEstimation.txt",
+		"/C/Users/lenovo/source/repos/essaiVecteur/essaiVecteur/main.h",
+		"/C/Users/lenovo/source/repos/essaiVecteur/essaiVecteur/main.cpp",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optique/projet chaleur/main.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/projet femto/Interaction-marche.py",
+		"/C/Users/lenovo/Downloads/RDF_Ex2.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/reconaissance/2122/TD clustering/RDF_Ex2.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/Pozu/.gitignore",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/tuto_w3schols.sublime-project",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/evenements/main.html",
+		"/C/Users/lenovo/Desktop/administratif/stages et candidatures/emploi superette/mdp site lidl.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/infamies caml/dl_vacances.ml",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/infamies caml/tas.ml",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/evenements/main.js",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/monstruosités C++/projet yams/yams_0.5/fonctions.cpp",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/main.js",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/style.css",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/main.html",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/notes js.md",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/test2/main.js",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/monstruosités C++/testCompilManuMultiBibl/biblMaisonHeader.h",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/monstruosités C++/testCompilManuMultiBibl/main.cpp",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/test2/test2.html",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/monstruosités C++/revisions/test1.cpp",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/monstruosités C++/revisions/compile.bat",
+		"/C/Users/lenovo/AppData/Roaming/Mozilla/Firefox/Profiles/chrome/userChrome.css",
+		"/E/VMs/notes générales.md",
+		"/C/Users/lenovo/Desktop/administratif/stages et candidatures/SIP2/candidature_fraunhofer/Cv_wenneker_v3_anglais.tex",
+		"/C/Users/lenovo/Desktop/sujets allata.md",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/proj_image/jaouen_TPB1/Code/.gitignore",
+		"/C/Users/lenovo/Desktop/administratif/stages et candidatures/SIP2/Cv_wenneker_v3_anglais.tex",
+		"/C/Users/lenovo/Desktop/wordlist",
+		"/C/Users/lenovo/Desktop/liste_francais.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/proj_image/jaouen_TPB1/Code/Functions/TP_vessel_detection.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/proj_image/jaouen_TPB1/Readme.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/proj_image/jaouen_TPB1/Data/Res/LOG_files/2021_12_14-15_51_38_Log_file.txt",
+		"/E/VMs/trouver le paquet d'un programme.md",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/trait_image2/tds/td1/td1.m",
+		"/E/code/lyx-2.3.6.1/lyx-2.3.6.1/src/LyX.cpp",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/proj_image/jaouen_TPB1/Data/Res/LOG_files/2021_12_14-14_15_29_Log_file.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/proj_image/jaouen_TPB1/Data/Res/LOG_files/2021_12_14-15_07_25_Log_file.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet1/main.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet1/DescenteGradientSecante.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet2/displayIter.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet2/grad_descent_FL.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet2/main.m",
+		"/C/Users/lenovo/Desktop/Cours/optique/semaine photonique/strasbourg/proj LT/CR_proj_2.tex",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet2/display3DFunc.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet2/CW1.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet2/CW2.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/optimisation/projet2/FletcherLemarechal.m",
+		"/C/Users/lenovo/AppData/Local/Temp/country-1.csv",
+		"/E/VMs/en cas de disque corrompu.txt",
+		"/C/Users/lenovo/Desktop/test.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/td_image_et_signal/TD_PartI_Images/TD_PartI_Images/laroch.bmp",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/td_image_et_signal/TD_PartI_Images/TD_PartI_Images/test.bmp",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/trait_image2/tds/td2/td2.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/batch et powershell/yt-dl/yt-dl.ps1",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/experiment.py",
+		"/C/Users/lenovo/Desktop/travail LHC/rapports/rendu labo/uml.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/main.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/trait_image2/exercice3/tse_imthreshold.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/SR830app.py",
+		"/C/Users/lenovo/anaconda3/pkgs/scikit-learn-0.23.2-py38h47e9c7a_0/Lib/site-packages/sklearn/ensemble/_hist_gradient_boosting/loss.py",
+		"/C/Users/lenovo/MesureMarron/iterer_classification_taille_sur_dossier (sous-VI).vi",
+		"/C/Users/lenovo/pymodaq_local/preset_configs/preset_default.xml",
+		"/E/fs.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/SR830.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/wid_experiment.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_QT5/plot_API/mainWindow.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_QT5/plot_API/test.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_QT5/plot_API/test_gui.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_plot/test.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_plot/test2.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/moteur_pi.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_QT5/pb_locked_thread/test_avec_pool.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_QT5/pb_locked_thread/test.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_QT5/pb_locked_thread/test_gui.ui",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_plot/test_drawnnow.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/immondices lateC/templates/Latex-template.tex",
+		"/C/Users/lenovo/Desktop/archives/Prépa/tipe 2018-2019/présentation/Code diapo Antoine 27-05-19.txt",
+		"/C/Users/lenovo/Desktop/archives/Prépa/tipe 2018-2019/présentation II/Code TIPE.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_plot/test_fft.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/fiches rappel/fiche.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/Litteralement une fiche de revision sur l'ordi.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_QT5/pb_locked_thread/test_gui.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_pb_QT5/main.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/THz_experiment/moteur.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/moteur_thorlabs.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/physics_instrumente/pipython/gcsmessages/__init__.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/moteur_v4/moteur_thorlabs.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/moteur.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/physics_instrumente/pipython/pidevice/gcscommands.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/moteur_v4/moteur.py",
+		"/C/Users/lenovo/Desktop/archives/Prépa/tipe 2018-2019/calcul dispersion/calcul_dispersion_final.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/projet femto/Interaction-marche_initial.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/vieux/reseau.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/vieux/relation dispersion tipe.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/output.log",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/output2.log",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_new_python/test.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/moteur_v4/moteur_pi.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/moteur_v4/Programme.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/SR830/SR830app.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/SR830/SR830.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/Prog_test.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/.gitignore",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/moteur_v4/moteur.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/moteur_v4/moteur_pi.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_modules/dependencies/y.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/SR830/SR830.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/SR830/SR830app.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_modules/dependencies/x.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_modules/main.py",
+		"/C/Users/lenovo/anaconda3/Lib/site-packages/numpy/lib/arraypad.py",
+		"/C/Users/lenovo/anaconda3/Lib/site-packages/numpy/core/__init__.py",
+		"/C/Users/lenovo/anaconda3/Lib/site-packages/numpy/__init__.py"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"actWnd1",
+			"...\n",
+			"type1",
+			"paragraphe",
+			"boutton1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 196.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.anaconda_documentation":
+	{
+		"height": 108.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "pyPozu.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 195.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
