@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"class",
+				"className"
+			],
+			[
 				"retu",
 				"returnThis"
 			],
@@ -208,10 +212,19 @@
 	"buffers":
 	[
 		{
-			"file": "main.py",
+			"file": "load_db.py",
 			"settings":
 			{
-				"buffer_size": 1092,
+				"buffer_size": 2025,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classifier.py",
+			"settings":
+			{
+				"buffer_size": 1005,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -260,6 +273,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"sublim",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"Terminu",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Term",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"Termi",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"Ter",
+				"Terminus: List Shells"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -404,10 +449,12 @@
 	},
 	"file_history":
 	[
+		"/C/Users/lenovo/Desktop/Cours/projets/ping22/analyse d'images/etiquettes.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/calc_features",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/proj foculs/foculs.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/Pozu/data_analysis/dataAnalysis.m",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/THz_experiment/experiment.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/vieux/traitement_empreintes.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/proj foculs/foculs.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/proj foculs/eee.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/immondices lateC/LyC/macros/commandesCustom.tex",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/c h o s e s html - js/js/tuto_w3schools/syntaxe générale/main.js",
@@ -529,13 +576,11 @@
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/SR830/SR830app.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_modules/dependencies/x.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_modules/main.py",
-		"/C/Users/lenovo/anaconda3/Lib/site-packages/numpy/lib/arraypad.py",
-		"/C/Users/lenovo/anaconda3/Lib/site-packages/numpy/core/__init__.py",
-		"/C/Users/lenovo/anaconda3/Lib/site-packages/numpy/__init__.py"
+		"/C/Users/lenovo/anaconda3/Lib/site-packages/numpy/lib/arraypad.py"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -549,6 +594,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"validation_data",
+			"samples",
+			"resFeatu",
+			"resFeatures",
+			"resLabels",
+			"resY",
+			"resX",
+			"X",
+			"predicted_data",
+			"calc_validatn_features",
+			"classes",
+			"c",
+			"parseImages",
 			"actWnd1",
 			"...\n",
 			"type1",
@@ -571,24 +629,52 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "main.py",
+					"file": "load_db.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1092,
+						"buffer_size": 2025,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								999,
-								999
+								1232,
+								1232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "classifier.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1005,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								733,
+								743
 							]
 						],
 						"settings":
@@ -639,6 +725,18 @@
 	"output.SublimeLinter":
 	{
 		"height": 0.0
+	},
+	"output.Terminus":
+	{
+		"height": 132.0
+	},
+	"output.Terminus 2":
+	{
+		"height": 132.0
+	},
+	"output.Terminus 3":
+	{
+		"height": 132.0
 	},
 	"output.anaconda_documentation":
 	{
