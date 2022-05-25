@@ -1,15 +1,17 @@
 import cv2
-
+import numpy as np
 
 def SB_hist(image):
 	chans = cv2.split(image)
-	return cv2.calcHist(
+	hist=cv2.calcHist(
 		images=chans, 
 		channels=[0,1,2], 
 		mask=None, 
 		histSize=[4,4,4], #taille de l'histogramme S&B 
-		ranges=[0,256,0,256,0,256] #très zarb
+		ranges=[0,256,0,256,0,256] #syntaxe très zarb
 	)
+	return np.reshape(hist,[1,-1]) #conversion en vecteur
+
 
 
 
