@@ -219,33 +219,6 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "classifier.py",
-			"settings":
-			{
-				"buffer_size": 1270,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 17,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "calc_features.py",
-			"settings":
-			{
-				"buffer_size": 46,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -465,8 +438,25 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu"
+	],
 	"file_history":
 	[
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/SB_hist.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/coord_corps_Mediapipe.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/couleur/2022/tp2 couleur/2022_AttributsDescripteurs_Code/signature.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/couleur/td2-descripteurs/signature.m",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/load_db.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/classifier.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/calc_features.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/Resultats/Coord.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/DB_RESIZED/jonathan_mainCroisees_Sideview_1.jpg",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/Resultats/coords.txt",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/resize_image.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/segmentation_Mediapipe.py",
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/.gitignore",
 		"/C/Users/lenovo/Desktop/Cours/projets/ping22/analyse d'images/etiquettes.txt",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/calc_features",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/proj foculs/foculs.py",
@@ -581,24 +571,11 @@
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/output.log",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/output2.log",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_new_python/test.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/moteur_v4/moteur_pi.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/moteur_v4/Programme.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/SR830/SR830app.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/SR830/SR830.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/Prog_test.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/.gitignore",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/moteur_v4/moteur.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/moteur_v4/moteur_pi.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_modules/dependencies/y.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/SR830/SR830.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/Thz_experiment/dependencies/SR830/SR830app.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_modules/dependencies/x.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/test_modules/main.py",
-		"/C/Users/lenovo/anaconda3/Lib/site-packages/numpy/lib/arraypad.py"
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/stage LHC/moteur_v4/moteur_pi.py"
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -612,6 +589,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"calc_feature_array",
 			"calc_all_features",
 			"calc_features_on_dataset",
 			"data_to_arrays",
@@ -650,7 +628,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -666,8 +644,8 @@
 						"selection":
 						[
 							[
-								1232,
-								1232
+								1456,
+								1470
 							]
 						],
 						"settings":
@@ -675,94 +653,10 @@
 							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 684.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "classifier.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1270,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1120,
-								1120
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 17,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								17,
-								17
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 570.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "calc_features.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 46,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								23,
-								23
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]

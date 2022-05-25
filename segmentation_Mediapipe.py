@@ -22,11 +22,13 @@ def segmentation_image(sample_img):
     
     output_image = np.where(binary_mask_3, sample_img, 255)    
     
-    plt.figure(figsize=[22,22])
+    plt.figure()
     plt.imshow(output_image[:,:,::-1]);plt.title("Output Image");plt.axis('off');
+    plt.show()
     cv2.imwrite('Resultats_segmentation/image_segmentee.jpg',output_image)
     return output_image
 
 
-sample_img = cv2.imread('DatabasePP/josuke_assis_1.jpg')
+sample_img = cv2.imread('./DB_RESIZED/jolyne_mainTete_1.jpg')
 segmentation_image(sample_img)
+

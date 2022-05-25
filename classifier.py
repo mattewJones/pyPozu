@@ -1,12 +1,12 @@
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix,precision_recall_fscore_support
 from load_db import learn_data,eval_data
-from calc_features import calc_feature_vector
+from calc_features import calc_feature
 import numpy as np
 
 
 
-def calc_feature_array(dataset_dict):
+def calc_feature_set(dataset_dict):
 	"""
 	transforme les données d'échantillons indexées par
 	classes dans dataset_dict en un tableau de valeurs d'attributs
@@ -26,8 +26,8 @@ def calc_feature_array(dataset_dict):
 
 
 
-learn_features,learn_labels=calc_feature_array(learn_data)
-eval_features,eval_labels=calc_feature_array(eval_data)
+learn_features,learn_labels=calc_feature_set(learn_data)
+eval_features,eval_labels=calc_feature_set(eval_data)
 
 clf = KNeighborsClassifier(p=1)
 clf.fit(learn_features,learn_labels)

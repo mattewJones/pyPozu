@@ -1,2 +1,2 @@
-def calc_feature_vector(img):
+def calc_feature(img):
 	return([1,2,3])
