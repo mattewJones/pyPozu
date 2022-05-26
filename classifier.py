@@ -1,8 +1,8 @@
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix,precision_recall_fscore_support
 
-from features import learn_features,learn_labels,learn_data
-from features import eval_features,eval_labels
+from features import learn_features_PCA,learn_labels,learn_data
+from features import eval_features_PCA,eval_labels,labels
 
 
 
@@ -12,12 +12,12 @@ from features import eval_features,eval_labels
 
 
 clf = KNeighborsClassifier(p=1)
-clf.fit(learn_features,learn_labels)
-predicted_labels=clf.predict(eval_features)
+clf.fit(learn_features_PCA,learn_labels)
+predicted_labels=clf.predict(eval_features_PCA)
 
 
 
-labels=list(learn_data.keys())
+
 
 conf_mat=confusion_matrix(
 	y_true=eval_labels,

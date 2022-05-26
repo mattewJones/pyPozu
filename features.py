@@ -1,9 +1,13 @@
 from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
+import sklearn.decomposition as dcp
 import numpy as np
+import matplotlib.pyplot as plt
+from random import randint
 
 
 from load_db import learn_data,eval_data
+
+
 
 
 
@@ -11,7 +15,7 @@ def extract_feature(img):
 	"""
 	pour tester
 	"""
-	return([1,2,3]+0.1*np.random.rand(3))
+	return([1,2,3,4]+0.1*np.random.rand(4))
 
 
 
@@ -20,7 +24,7 @@ def calc_feature_set(dataset_dict):
 	transforme les données d'échantillons indexées par
 	classes dans dataset_dict en un tableau de valeurs d'attributs
 	et un tableau contenant les étiquettes 
-	des classes correspondantes
+	des classes correspondantes (format exigé par sklearn)
 	"""
 	resFeatures=[]
 	resLabels=[]
@@ -32,6 +36,11 @@ def calc_feature_set(dataset_dict):
 	return(np.array(resFeatures),np.array(resLabels))
 
 
+#liste des étiquettes
+
+labels=list(learn_data.keys())
+
+
 # calcul des attributs et mise sous forme exigée par sklearn
 
 learn_features,learn_labels=calc_feature_set(learn_data)
@@ -41,14 +50,56 @@ eval_features,eval_labels=calc_feature_set(eval_data)
 
 # normalisation (apparemment ça permet à l'ACP de beaucoup mieux marcher)
 
-learn_features_norm = StandardScaler().fit_transform(learn_features)
-eval_features_norm = StandardScaler().fit_transform(eval_features)
+s=StandardScaler()
+s.fit(learn_features) #on ne normalise qu'avec les valeurs des données d'entraînement évidemment
+learn_features_norm = s.transform(learn_features)
+eval_features_norm = s.transform(eval_features)
+
+
+# ACP (avec 95% de la variance)
+
+PCA=dcp.PCA(.95)
+PCA.fit(learn_features_norm) #on ne calcule le projecteur qu'avec les données d'entrainement
+learn_features_PCA=PCA.transform(learn_features_norm)
+eval_features_PCA=PCA.transform(eval_features_norm)
 
 
 
-# ACP
+def extract_ACP_feature(img):
+	"""
+	pour faire la classification d'autres images
+	"""
+	raw_feature=extract_feature(img)
+	PCA_feature=PCA.transform(s.transform(raw_feature))
+	return PCA_feature
 
-PCA_transform=PCA(n_components=2)
-principalComponents = PCA_transform.fit_transform(learn_features_norm)
 
 
+if __name__=="__main__":
+	#test de l'ACP : projection sur le sev de dimension 2
+	#de plus grande inertie
+
+
+	PCA_test=dcp.PCA(n_components=2)
+	principalComponents = PCA_test.fit_transform(learn_features_norm)
+
+	fig = plt.figure()
+	ax = fig.add_subplot(1,1,1) 
+	ax.set_xlabel('Principal Component 1')
+	ax.set_ylabel('Principal Component 2')
+	ax.set_title('2 component PCA')
+
+
+	colors=['#%06X' % randint(0, 0xFFFFFF) for i in range(len(labels))]
+	for label, color in zip(labels,colors):
+		indicesToKeep=np.where(learn_labels==label)
+		ax.scatter(
+			principalComponents[indicesToKeep,0],
+			principalComponents[indicesToKeep,1],
+			c = color,
+			s = 50
+		)
+
+	ax.legend(labels)
+	ax.grid()
+	fig.show()

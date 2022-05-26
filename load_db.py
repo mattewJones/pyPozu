@@ -22,6 +22,11 @@ class SampleData:
         self.className, self.pose, otherData = adress.name.split("_", 2)
 
     def imData(self) :
+    	"""
+    	charge l'image en mémoire et retourne un objet 
+    	qui la représente (utilise la librairie de chargement 
+    	d'images PIL)
+    	"""
     	return Image.open(self.adress)
 
 
@@ -69,6 +74,7 @@ learn_data,eval_data=split_database(db_data,0.5)
 
 
 if __name__=="__main__" :
+	#test : affichage des données
 
 	classes=db_data.values()
 
