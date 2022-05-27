@@ -212,22 +212,22 @@
 	"buffers":
 	[
 		{
-			"file": "resize_image.py",
+			"contents": "Microsoft Windows [version 10.0.19043.1706]                              \n(c) Microsoft Corporation. Tous droits réservés.                         \n                                                                         \nC:\\Users\\lenovo\\Desktop\\Programmes extremmement bien codésIRONIE\\horreurs​‌​\n python\\pyPozu>python\nPython 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 \nbit (AMD64)] on win32                                                    \nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.   \n>>> import Pathfrom pathlib import Path                                  \n  File \"<stdin>\", line 1                                                 \n    import Pathfrom pathlib import Path                                  \n                    ^                                                    \nSyntaxError: invalid syntax                                              \n>>> from pathlib import Path                                             \n>>> x=Path('./DB_RESIZED')\n>>> x\nWindowsPath('DB_RESIZED')                                                \n>>> x.methods()\nTraceback (most recent call last):                                       \n  File \"<stdin>\", line 1, in <module>                                    \nAttributeError: 'WindowsPath' object has no attribute 'methods'          \n>>> x.__methods()                                                        \nTraceback (most recent call last):                                       \n  File \"<stdin>\", line 1, in <module>                                    \nAttributeError: 'WindowsPath' object has no attribute '__methods'        \n>>> \nMicrosoft Windows [version 10.0.19043.1706]                                                     \n(c) Microsoft Corporation. Tous droits réservés.                                                \n                                                                                                \nC:\\Users\\lenovo\\Desktop\\Programmes extremmement bien codésIRONIE\\horreurs python\\pyPozu>",
 			"settings":
 			{
-				"buffer_size": 320,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"buffer_size": 2012,
+				"line_ending": "Windows",
+				"name": "Command Prompt",
+				"scratch": true
 			}
 		},
 		{
-			"contents": "Microsoft Windows [version 10.0.19043.1706]                              \n(c) Microsoft Corporation. Tous droits réservés.                         \n                                                                         \nC:\\Users\\lenovo\\Desktop\\Programmes extremmement bien codésIRONIE\\horreurs​‌​\n python\\pyPozu>python\nPython 3.9.4 (tags/v3.9.4:1f2e308, Apr  6 2021, 13:40:21) [MSC v.1928 64 \nbit (AMD64)] on win32                                                    \nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.   \n>>> import Pathfrom pathlib import Path                                  \n  File \"<stdin>\", line 1                                                 \n    import Pathfrom pathlib import Path                                  \n                    ^                                                    \nSyntaxError: invalid syntax                                              \n>>> from pathlib import Path                                             \n>>> x=Path('./DB_RESIZED')\n>>> x\nWindowsPath('DB_RESIZED')                                                \n>>> x.methods()\nTraceback (most recent call last):                                       \n  File \"<stdin>\", line 1, in <module>                                    \nAttributeError: 'WindowsPath' object has no attribute 'methods'          \n>>> x.__methods()                                                        \nTraceback (most recent call last):                                       \n  File \"<stdin>\", line 1, in <module>                                    \nAttributeError: 'WindowsPath' object has no attribute '__methods'        \n>>> ",
+			"file": "resize_images.py",
 			"settings":
 			{
-				"buffer_size": 1632,
-				"line_ending": "Windows",
-				"name": "  - python",
-				"scratch": true
+				"buffer_size": 644,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -454,6 +454,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/resize_image.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/coord_corps_Mediapipe.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/features.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/classifier.py",
@@ -461,7 +462,6 @@
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/load_db.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/PCA.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/SB_hist.py",
-		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/resize_image.py",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/couleur/2022/tp2 couleur/2022_AttributsDescripteurs_Code/signature.m",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/vomi matlab/image/couleur/td2-descripteurs/signature.m",
 		"/C/Users/lenovo/Desktop/Programmes extremmement bien codésIRONIE/horreurs python/pyPozu/calc_features.py",
@@ -585,7 +585,7 @@
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -644,46 +644,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "resize_image.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 320,
+						"buffer_size": 2012,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58,
-								33
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1632,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1632,
-								1632
+								2012,
+								2012
 							]
 						],
 						"settings":
@@ -741,8 +713,36 @@
 							"terminus_view.natural_keyboard": true,
 							"terminus_view.panel_name": null,
 							"terminus_view.tag": null,
-							"terminus_view.viewport_y": 0.0,
+							"terminus_view.viewport_y": 494.0,
 							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resize_images.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 644,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								644,
+								644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

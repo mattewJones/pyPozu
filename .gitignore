@@ -1,5 +1,4 @@
 *.jpg
 *.asv
 *.pyc
-*.sublime-workspace
-*.sublime-project
+*.sublime*
