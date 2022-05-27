@@ -60,7 +60,7 @@ def split_database(db_data, p: float):
         nmax = math.ceil(len(c)*p)
         # modifie l'ordre des éléments de la classe mais pas grave
         np.random.shuffle(c)
-        learn_data[cName] = c[:nmax-1]
+        learn_data[cName] = c[:nmax]
         eval_data[cName] = c[nmax:]
 
     return learn_data, eval_data

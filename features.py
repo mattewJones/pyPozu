@@ -2,7 +2,7 @@ from sklearn.preprocessing import StandardScaler
 import sklearn.decomposition as dcp
 import numpy as np
 import matplotlib.pyplot as plt
-from random import randint
+
 
 
 from load_db import learn_data,eval_data
@@ -16,6 +16,11 @@ def extract_feature(img):
 	n'utilise que la pose pour l'instant
 	"""
 	coords=coord_corps(img)
+	if len(coords)<33: 
+		#33 : taille attendue de la sortie parce que des fois c'est moins hein parce qu'avoir un résultat cohérent c'est pour les pauvres hein librairie de merde langage de merde "we're beetwen consenting adults" TA GUEULE VAN ROSSUM 
+		print("problèmes de détection sur 1 des images")
+		coords=np.full(33,1)
+
 	pose_feature=calcul_distances(coords)
 
 
@@ -94,13 +99,11 @@ if __name__=="__main__":
 	ax.set_title('2 component PCA')
 
 
-	colors=['#%06X' % randint(0, 0xFFFFFF) for i in range(len(labels))] #liste de couleurs aléatoires
-	for label, color in zip(labels,colors):
+	for label in labels :
 		indicesToKeep=np.where(learn_labels==label)
 		ax.scatter(
 			principalComponents[indicesToKeep,0],
 			principalComponents[indicesToKeep,1],
-			c = color,
 			s = 50
 		)
 

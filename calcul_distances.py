@@ -56,7 +56,7 @@ if __name__=="__main__":
     """
     test
     """
-    photo = 'DB_RESIZED/jolyne_mainshanches_2.jpg'
+    photo = 'DB_RESIZED/giorno_mainstete_1.jpg'
     img = cv2.imread(photo)
     coord_photo = coord_corps(img)
     print("#### retour ####")
