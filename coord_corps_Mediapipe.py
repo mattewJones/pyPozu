@@ -9,7 +9,7 @@ mp_pose = mp.solutions.pose
 
 
 
-def coords_pose(image):
+def coords_full_pose(image):
     with mp_pose.Pose(
     static_image_mode=True,
     model_complexity=2,
@@ -32,7 +32,7 @@ def coord_corps(image):
                   'LEFT_SHOULDER', 'RIGHT_SHOULDER', 'LEFT_ELBOW', 'RIGHT_ELBOW', 'LEFT_WRIST', 'RIGHT_WRIST', 'LEFT_PINKY', 'RIGHT_PINKY', 'LEFT_INDEX', 'RIGHT_INDEX', 'LEFT_THUMB',
                   'RIGHT_THUMB', 'LEFT_HIP', 'RIGHT_HIP', 'LEFT_KNEE', 'RIGHT_KNEE', 'LEFT_ANKLE', 'RIGHT_ANKLE', 'LEFT_HEEL', 'RIGHT_HEEL', 'LEFT_FOOT_INDEX', 'RIGHT_FOOT_INDEX']
     
-    results=coords_pose(image)    
+    results=coords_full_pose(image)    
 
         
     # Ecriture des coordonnées dans une liste
@@ -56,7 +56,7 @@ def display_coords(image):
     IMAGE_FILES = []
     BG_COLOR = (192, 192, 192) # gray
 
-    results=coords_pose(image)
+    results=coords_full_pose(image)
 
     annotated_image = image.copy()
 

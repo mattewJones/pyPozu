@@ -49,6 +49,7 @@ def calcul_distances(Coord):
    Epaules, Coude Gauche_Hanche, Coude Droit_Hanche)'''
     
     return (Dnc_norm,Dnmg_norm,Dnmd_norm,Dhmg_norm,Dhmd_norm,De_norm, Dhcg_norm,Dhcd_norm )
+
     
 
 if __name__=="__main__":

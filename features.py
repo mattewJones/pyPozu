@@ -6,7 +6,7 @@ from random import randint
 
 
 from load_db import learn_data,eval_data
-from calcul_distances import calcul_distances
+from calcul_distances import coord_corps,calcul_distances
 
 
 
@@ -15,7 +15,8 @@ def extract_feature(img):
 	"""
 	n'utilise que la pose pour l'instant
 	"""
-	pose_feature=calcul_distances(img)
+	coords=coord_corps(img)
+	pose_feature=calcul_distances(coords)
 
 
 	return(np.array(pose_feature))
@@ -93,7 +94,7 @@ if __name__=="__main__":
 	ax.set_title('2 component PCA')
 
 
-	colors=['#%06X' % randint(0, 0xFFFFFF) for i in range(len(labels))]
+	colors=['#%06X' % randint(0, 0xFFFFFF) for i in range(len(labels))] #liste de couleurs aléatoires
 	for label, color in zip(labels,colors):
 		indicesToKeep=np.where(learn_labels==label)
 		ax.scatter(
