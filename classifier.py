@@ -37,8 +37,8 @@ prec,recll,fscore,spp=precision_recall_fscore_support(
 
 
 
+print(conf_mat)
 
-
-print(labels)
+print(eval_labels)
 print(predicted_labels)
 print(fscore)

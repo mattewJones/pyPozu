@@ -30,8 +30,12 @@ class SampleData:
 
 
 def read_database(rep: Path):
-    # un dictionnaire qui contiendra la liste des
-    # échantillons de chaque classe, indexée par son nom
+    """
+    lit les données (des noms de fichiers)
+    de la base de données avec un dictionnaire classes
+    qui contient la liste des échantillons 
+    de chaque classe, indexée par son nom
+    """
     classes = defaultdict(list)
     for imgFile in rep.glob("*.jpg"):
         sample = SampleData(imgFile)
@@ -85,7 +89,7 @@ if __name__ == "__main__":
 
         print("\nclasse : ", cName)
 
-        print("learn --------------")
+        print("apprentissage --------------")
         for sample in learn_c:
             print(sample.adress)
 
