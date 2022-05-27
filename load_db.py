@@ -22,11 +22,12 @@ class SampleData:
 
     def imData(self):
         """
-        charge l'image en mémoire et retourne un objet 
-        qui la représente (utilise la librairie de chargement 
+        charge l'image en mémoire dans un tableau
+        numpy et le retourne 
+        (utilise la librairie de chargement 
         d'images PIL)
         """
-        return Image.open(self.adress)
+        return np.array(Image.open(self.adress))
 
 
 def read_database(rep: Path):

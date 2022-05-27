@@ -6,16 +6,19 @@ from random import randint
 
 
 from load_db import learn_data,eval_data
-
+from calcul_distances import calcul_distances
 
 
 
 
 def extract_feature(img):
 	"""
-	pour tester
+	n'utilise que la pose pour l'instant
 	"""
-	return([1,2,3,4]+0.1*np.random.rand(4))
+	pose_feature=calcul_distances(img)
+
+
+	return(np.array(pose_feature))
 
 
 

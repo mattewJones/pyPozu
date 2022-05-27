@@ -19,7 +19,7 @@ def calcul_distances(Coord):
     
     # Distance nez-cheville
     D_Nez_Cheville = np.sqrt((Coord[0][1]-Mil_Cheville[0])**2+(Coord[0][1]-Mil_Cheville[1])**2)
-    
+     
     # Distance Nez-main gauche/droite
     D_Nez_MainG = np.sqrt((Coord[0][1]-Coord[15][1])**2+(Coord[0][2]-Coord[15][2])**2)
     D_Nez_MainD = np.sqrt((Coord[0][1]-Coord[16][1])**2+(Coord[0][2]-Coord[16][2])**2)
@@ -51,10 +51,13 @@ def calcul_distances(Coord):
     return (Dnc_norm,Dnmg_norm,Dnmd_norm,Dhmg_norm,Dhmd_norm,De_norm, Dhcg_norm,Dhcd_norm )
     
 
-
-# photo = 'DatabasePP/josuke_assis_1.jpg'
-# img = cv2.imread(photo)
-# coord_photo = coord_corps(img)
-# print("#### retour ####")
-# print(calcul_distances(coord_photo))
+if __name__=="__main__":
+    """
+    test
+    """
+    photo = 'DB_RESIZED/jolyne_mainshanches_2.jpg'
+    img = cv2.imread(photo)
+    coord_photo = coord_corps(img)
+    print("#### retour ####")
+    print(calcul_distances(coord_photo))
     
