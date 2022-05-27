@@ -16,11 +16,6 @@ def extract_feature(img):
 	n'utilise que la pose pour l'instant
 	"""
 	coords=coord_corps(img)
-	if len(coords)<33: 
-		#33 : taille attendue de la sortie parce que des fois c'est moins hein parce qu'avoir un résultat cohérent c'est pour les pauvres hein librairie de merde langage de merde "we're beetwen consenting adults" TA GUEULE VAN ROSSUM 
-		print("problèmes de détection sur 1 des images")
-		coords=np.full(33,1)
-
 	pose_feature=calcul_distances(coords)
 
 
@@ -39,7 +34,12 @@ def calc_feature_set(dataset_dict):
 	resLabels=[]
 	for label,sampleList in dataset_dict.items():
 		for sample in sampleList :
-			feature=extract_feature(sample.imData())
+			try:
+				feature=extract_feature(sample.imData())
+			except:
+				feature=np.zeros(8) #8 : taille normale de l'attribut
+				print('erreur d\'extraction des attributs sur : ',sample.adress)
+
 			resFeatures.append(feature)
 			resLabels.append(label)
 	return(np.array(resFeatures),np.array(resLabels))
