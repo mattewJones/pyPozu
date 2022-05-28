@@ -7,19 +7,23 @@ from matplotlib.colors import to_hex,hsv_to_rgb
 
 from load_db import learn_data,eval_data
 from calcul_distances import coord_corps,calcul_distances
+from SB_hist import SB_hist
 
 
 
 
 def extract_feature(img):
 	"""
-	n'utilise que la pose pour l'instant
+	utilise pose et histogramme
 	"""
 	coords=coord_corps(img)
-	pose_feature=calcul_distances(coords)
+	pose=np.array(calcul_distances(coords))
 
+	hist=SB_hist(img)
 
-	return(np.array(pose_feature))
+	feature=np.concatenate([pose,hist])
+
+	return(feature)
 
 
 
@@ -37,7 +41,7 @@ def calc_feature_set(dataset_dict):
 			try:
 				feature=extract_feature(sample.imData())
 			except:
-				feature=np.zeros(8) #8 : taille normale de l'attribut
+				feature=np.zeros(72) #72 : taille normale de l'attribut
 				print('erreur d\'extraction des attributs sur : ',sample.adress)
 
 			resFeatures.append(feature)
@@ -113,9 +117,7 @@ if __name__=="__main__":
 			ax.scatter(
 				principalComponents_learn[indicesToKeep,0],
 				principalComponents_learn[indicesToKeep,1],
-				marker='^',
-				c=color,
-				s=100
+				marker='^', c=color, s=100
 			)
 			legendList.append(label+" (learn)")
 
@@ -125,9 +127,7 @@ if __name__=="__main__":
 			ax.scatter(
 				principalComponents_eval[indicesToKeep,0],
 				principalComponents_eval[indicesToKeep,1],
-				marker='o',
-				s=100,
-				c=color
+				marker='o', c=color, s=100
 			)
 			legendList.append(label+" (eval)")
 

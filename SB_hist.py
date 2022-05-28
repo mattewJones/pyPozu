@@ -10,7 +10,7 @@ def SB_hist(image):
 		histSize=[4,4,4], #taille de l'histogramme S&B 
 		ranges=[0,256,0,256,0,256] #syntaxe très zarb
 	)
-	return np.reshape(hist,[1,-1]) #conversion en vecteur
+	return np.reshape(hist,-1) #conversion en vecteur
 
 
 
