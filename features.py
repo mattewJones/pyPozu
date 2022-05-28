@@ -96,7 +96,7 @@ if __name__=="__main__":
 
 
 	def plotPCA(principalComponents_learn,principalComponents_eval):
-		teintes=np.linspace(0,1,len(labels))
+		teintes=np.linspace(0,0.8,len(labels))
 		colors=[to_hex(hsv_to_rgb([t,1,1])) for t in teintes]
 		
 		fig = plt.figure()
@@ -105,6 +105,8 @@ if __name__=="__main__":
 		ax.set_ylabel('Principal Component 2')
 		ax.set_title('2 component PCA')
 
+		legendList=[]
+
 		#plot learn features
 		for color,label in zip(colors,labels) :
 			indicesToKeep=np.where(learn_labels==label)
@@ -112,8 +114,10 @@ if __name__=="__main__":
 				principalComponents_learn[indicesToKeep,0],
 				principalComponents_learn[indicesToKeep,1],
 				marker='^',
-				c=color
+				c=color,
+				s=100
 			)
+			legendList.append(label+" (learn)")
 
 		#plot validation features
 		for color,label in zip(colors,labels) :
@@ -122,10 +126,13 @@ if __name__=="__main__":
 				principalComponents_eval[indicesToKeep,0],
 				principalComponents_eval[indicesToKeep,1],
 				marker='o',
+				s=100,
 				c=color
 			)
+			legendList.append(label+" (eval)")
 
-		ax.legend(labels)
+
+		ax.legend(legendList)
 		ax.grid()
 		fig.show()
 
