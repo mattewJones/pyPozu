@@ -56,12 +56,14 @@ def resize_whole_database(destDir: Path, size=(400, 600)):
         lastUpdateDate = newUpdateDate
 
     with lastUpdateDateSave.open("wb") as f:
-        pickle.dump(file=f, obj=lastUpdateDate)
+        pickle.dump(file=f, obj=newUpdateDate)
 
     if srcDirChanged or (lastUpdateDate < newUpdateDate):
         for imgFile in srcDir.glob("*.jpg"):
             destPath = destDir / imgFile.name
             resize_image(imgFile, destPath)
+    else :
+        print("base de donnée prétraitée à jour, rien à faire")
 
 
 destDir = Path('./DB_RESIZED/')
