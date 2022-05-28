@@ -2,7 +2,7 @@ from sklearn.preprocessing import StandardScaler
 import sklearn.decomposition as dcp
 import numpy as np
 import matplotlib.pyplot as plt
-
+from matplotlib.colors import to_hex,hsv_to_rgb
 
 
 from load_db import learn_data,eval_data
@@ -96,7 +96,8 @@ if __name__=="__main__":
 
 
 	def plotPCA(principalComponents_learn,principalComponents_eval):
-		colors = (10*np.random.rand(len(labels)))**2+50
+		teintes=np.linspace(0,1,len(labels))
+		colors=[to_hex(hsv_to_rgb([t,1,1])) for t in teintes]
 		
 		fig = plt.figure()
 		ax = fig.add_subplot(1,1,1) 
@@ -105,23 +106,23 @@ if __name__=="__main__":
 		ax.set_title('2 component PCA')
 
 		#plot learn features
-		for label,size in zip(labels,sizes) :
+		for color,label in zip(colors,labels) :
 			indicesToKeep=np.where(learn_labels==label)
 			ax.scatter(
 				principalComponents_learn[indicesToKeep,0],
 				principalComponents_learn[indicesToKeep,1],
 				marker='^',
-				s=size
+				c=color
 			)
 
 		#plot validation features
-		for label,size in zip(labels,sizes) :
+		for color,label in zip(colors,labels) :
 			indicesToKeep=np.where(eval_labels==label)
 			ax.scatter(
 				principalComponents_eval[indicesToKeep,0],
 				principalComponents_eval[indicesToKeep,1],
 				marker='o',
-				s=size
+				c=color
 			)
 
 		ax.legend(labels)
