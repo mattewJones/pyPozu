@@ -90,23 +90,42 @@ if __name__=="__main__":
 
 
 	PCA_test=dcp.PCA(n_components=2)
-	principalComponents = PCA_test.fit_transform(learn_features_norm)
-
-	fig = plt.figure()
-	ax = fig.add_subplot(1,1,1) 
-	ax.set_xlabel('Principal Component 1')
-	ax.set_ylabel('Principal Component 2')
-	ax.set_title('2 component PCA')
+	PCA_test.fit(learn_features_norm)
+	principalComponents_learn = PCA_test.transform(learn_features_norm)
+	principalComponents_eval=PCA_test.transform(eval_features_norm)
 
 
-	for label in labels :
-		indicesToKeep=np.where(learn_labels==label)
-		ax.scatter(
-			principalComponents[indicesToKeep,0],
-			principalComponents[indicesToKeep,1],
-			s = 50
-		)
+	def plotPCA(principalComponents_learn,principalComponents_eval):
+		colors = (10*np.random.rand(len(labels)))**2+50
+		
+		fig = plt.figure()
+		ax = fig.add_subplot(1,1,1) 
+		ax.set_xlabel('Principal Component 1')
+		ax.set_ylabel('Principal Component 2')
+		ax.set_title('2 component PCA')
 
-	ax.legend(labels)
-	ax.grid()
-	fig.show()
+		#plot learn features
+		for label,size in zip(labels,sizes) :
+			indicesToKeep=np.where(learn_labels==label)
+			ax.scatter(
+				principalComponents_learn[indicesToKeep,0],
+				principalComponents_learn[indicesToKeep,1],
+				marker='^',
+				s=size
+			)
+
+		#plot validation features
+		for label,size in zip(labels,sizes) :
+			indicesToKeep=np.where(eval_labels==label)
+			ax.scatter(
+				principalComponents_eval[indicesToKeep,0],
+				principalComponents_eval[indicesToKeep,1],
+				marker='o',
+				s=size
+			)
+
+		ax.legend(labels)
+		ax.grid()
+		fig.show()
+
+	plotPCA(principalComponents_learn,principalComponents_eval)
