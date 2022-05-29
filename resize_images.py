@@ -7,6 +7,7 @@ from PIL.ImageOps import exif_transpose as fix_orientation
 import numpy as np
 from tkinter.filedialog import askdirectory, Tk
 import pickle
+import os
 
 
 def resize_image(src: Path, dest: Path, size=(400, 600)):
@@ -22,6 +23,7 @@ def resize_image(src: Path, dest: Path, size=(400, 600)):
 def resize_whole_database(destDir: Path, size=(400, 600)):
     '''
     Va chercher toutes les images dans un répertoire externe srcDir,
+    dont l'adresse est enregistre dans ./dbSrcDirSave,
     les redimensionne et les met dans destDir. 
     Si srcDir n'existe pas, le demande à l'utilisateur.
     ne fait par ailleurs le calcul que si srcDir a été modifié
@@ -31,6 +33,8 @@ def resize_whole_database(destDir: Path, size=(400, 600)):
     srcDirSave = Path('./dbSrcDirSave')
     lastUpdateDateSave = Path('./dbLastUpdateDateSave')
 
+    # vérification que srcDir est acessible, 
+    # sinon demande à l'utilisateur de le màj
     try:
         assert srcDirSave.exists()
         with srcDirSave.open("rb") as f:
@@ -42,12 +46,12 @@ def resize_whole_database(destDir: Path, size=(400, 600)):
             title='Selectionner le dossier des images :'))
         with srcDirSave.open("wb") as f:
             pickle.dump(obj=srcDir, file=f)
-        srcDirChanged = True
+        srcDirUpdated = True
     else:
-        srcDirChanged = False
+        srcDirUpdated = False
 
+    # détection d'une màj du contenu du rep. source
     newUpdateDate = srcDir.stat().st_mtime
-
     try:
         assert lastUpdateDateSave.exists()
         with lastUpdateDateSave.open("rb") as f:
@@ -58,7 +62,12 @@ def resize_whole_database(destDir: Path, size=(400, 600)):
     with lastUpdateDateSave.open("wb") as f:
         pickle.dump(file=f, obj=newUpdateDate)
 
-    if srcDirChanged or (lastUpdateDate < newUpdateDate):
+    if srcDirUpdated or (lastUpdateDate < newUpdateDate):
+        
+        #nettoyage de destDir
+        for imgFile in destDir.glob("*.jpg"):
+            os.remove(imgFile)
+
         for imgFile in srcDir.glob("*.jpg"):
             destPath = destDir / imgFile.name
             resize_image(imgFile, destPath)
@@ -66,5 +75,6 @@ def resize_whole_database(destDir: Path, size=(400, 600)):
         print("base de donnée prétraitée à jour, rien à faire")
 
 
-destDir = Path('./DB_RESIZED/')
-resize_whole_database(destDir)
+if __name__ == "__main__":
+    destDir = Path('./DB_RESIZED/')
+    resize_whole_database(destDir)

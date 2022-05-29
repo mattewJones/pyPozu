@@ -3,6 +3,8 @@ from pathlib import Path
 from PIL import Image
 import numpy as np
 import math
+from resize_images import resize_whole_database
+
 
 
 class SampleData:
@@ -66,8 +68,14 @@ def split_database(db_data, p: float):
     return learn_data, eval_data
 
 
+
+
 db_dir = Path("./DB_RESIZED")
 
+#prétraitement
+resize_whole_database(db_dir)
+
+#lecture
 db_data = read_database(db_dir)
 
 learn_data, eval_data = split_database(db_data, 0.5)
