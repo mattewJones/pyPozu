@@ -3,7 +3,7 @@ from pathlib import Path
 from PIL import Image
 import numpy as np
 import math
-from resize_images import resize_whole_database
+from preprocess import resize_whole_database
 
 
 

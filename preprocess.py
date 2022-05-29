@@ -23,15 +23,15 @@ def resize_image(src: Path, dest: Path, size=(400, 600)):
 def resize_whole_database(destDir: Path, size=(400, 600)):
     '''
     Va chercher toutes les images dans un répertoire externe srcDir,
-    dont l'adresse est enregistre dans ./dbSrcDirSave,
+    dont l'adresse est enregistrée dans ./dbSrcDirSave.pkl,
     les redimensionne et les met dans destDir. 
     Si srcDir n'existe pas, le demande à l'utilisateur.
     ne fait par ailleurs le calcul que si srcDir a été modifié
     depuis la dernière fois que le calcul a été fait
     '''
 
-    srcDirSave = Path('./dbSrcDirSave')
-    lastUpdateDateSave = Path('./dbLastUpdateDateSave')
+    srcDirSave = Path('./dbSrcDirSave.pkl')
+    lastUpdateDateSave = Path('./dbLastUpdateDateSave.pkl')
 
     # vérification que srcDir est acessible, 
     # sinon demande à l'utilisateur de le màj

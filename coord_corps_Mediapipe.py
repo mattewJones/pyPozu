@@ -49,6 +49,12 @@ def coord_corps(image):
     return Coord
 
 
+def body_mask(image):
+    results=coords_full_pose(image)
+    condition = np.stack((results.segmentation_mask,) * 3, axis=-1) > 0.1
+    return condition
+
+
 def display_coords(image):
 
     # For static images:
@@ -56,7 +62,6 @@ def display_coords(image):
     BG_COLOR = (192, 192, 192) # gray
 
     results=coords_full_pose(image)
-
     annotated_image = image.copy()
 
 
@@ -104,3 +109,4 @@ if __name__=="__main__" :
     img = cv2.imread(file_name, -1)
 
     display_coords(img)
+
