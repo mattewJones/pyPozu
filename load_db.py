@@ -78,7 +78,7 @@ resize_whole_database(db_dir)
 #lecture
 db_data = read_database(db_dir)
 
-learn_data, eval_data = split_database(db_data, 0.5)
+learn_data, eval_data = split_database(db_data, 0.75)
 
 
 if __name__ == "__main__":
