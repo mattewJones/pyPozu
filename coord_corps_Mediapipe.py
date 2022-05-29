@@ -50,9 +50,17 @@ def coord_corps(image):
 
 
 def body_mask(image):
+    """
+    utilise la magine (noire) de Mediapipe
+    pour renvoyer un masque binaire
+    issu de la segmentation du corps de l'utilisateur
+    détecté sur la photo
+    """
     results=coords_full_pose(image)
     condition = np.stack((results.segmentation_mask,) * 3, axis=-1) > 0.1
-    return condition
+    conditionBin=condition.astype(np.uint8)
+    res=conditionBin[:,:,1]
+    return res
 
 
 def display_coords(image):

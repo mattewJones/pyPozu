@@ -5,12 +5,12 @@ from coord_corps_Mediapipe import body_mask
 def SB_hist(image):
 	chans = cv2.split(image)
 
-	mask=np.array(body_mask(image),dtype=int)
+	mask=body_mask(image)
 	
 	hist=cv2.calcHist(
 		images=chans, 
 		channels=[0,1,2], 
-		mask=mask, 
+		mask=mask,
 		histSize=[4,4,4], #taille de l'histogramme S&B 
 		ranges=[0,256,0,256,0,256] #syntaxe très zarb
 	)
