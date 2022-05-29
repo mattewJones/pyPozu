@@ -10,7 +10,7 @@ def SB_hist(image):
 	hist=cv2.calcHist(
 		images=chans, 
 		channels=[0,1,2], 
-		mask=body_mask(image), 
+		mask=mask, 
 		histSize=[4,4,4], #taille de l'histogramme S&B 
 		ranges=[0,256,0,256,0,256] #syntaxe très zarb
 	)
