@@ -3,7 +3,8 @@ import sklearn.decomposition as dcp
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import to_hex,hsv_to_rgb
-
+import pandas as pd
+from pathlib import Path
 
 # from load_db import learn_data,eval_data
 from calcul_distances import coord_corps,calcul_distances
@@ -26,7 +27,6 @@ def extract_feature(img):
 	return(feature)
 
 
-
 def calc_feature_set(dataset_dict):
 	"""
 	transforme les données d'échantillons indexées par
@@ -47,6 +47,25 @@ def calc_feature_set(dataset_dict):
 			resFeatures.append(feature)
 			resLabels.append(label)
 	return(np.array(resFeatures),np.array(resLabels))
+
+
+def save_feature(features,labels,saveFile:Path):
+	DF=pd.DataFrame(features,labels)
+	DF.to_csv(saveFile)
+
+
+
+def save_all_feature_data(learn_features,learn_labels,eval_features,eval_labels):
+	"""
+	enregistre les valeurs des attributs 
+	dans un fichier csv
+	"""
+	save_feature(learn_features,learn_labels,Path("./learn.csv"))
+	save_feature(eval_features,eval_labels,Path("./eval.csv"))
+
+
+
+
 
 
 # #liste des étiquettes
