@@ -70,38 +70,38 @@ def split_database(db_data, p: float):
 
 
 
-db_dir = Path("./DB_RESIZED")
+# db_dir = Path("./DB_RESIZED")
 
-#prétraitement
-resize_whole_database(db_dir)
+# #prétraitement
+# resize_whole_database(db_dir)
 
-#lecture
-db_data = read_database(db_dir)
+# #lecture
+# db_data = read_database(db_dir)
 
-learn_data, eval_data = split_database(db_data, 0.75)
+# learn_data, eval_data = split_database(db_data, 0.75)
 
 
-if __name__ == "__main__":
-    # test : affichage des données
+# if __name__ == "__main__":
+#     # test : affichage des données
 
-    classes = db_data.values()
+#     classes = db_data.values()
 
-    for c in classes:
-        for sample in c:
-            print(sample.className)
-            print(sample.pose)
-            print(sample.adress)
+#     for c in classes:
+#         for sample in c:
+#             print(sample.className)
+#             print(sample.pose)
+#             print(sample.adress)
 
-    for cName in db_data.keys():
-        learn_c = learn_data[cName]
-        validation_c = eval_data[cName]
+#     for cName in db_data.keys():
+#         learn_c = learn_data[cName]
+#         validation_c = eval_data[cName]
 
-        print("\nclasse : ", cName)
+#         print("\nclasse : ", cName)
 
-        print("apprentissage --------------")
-        for sample in learn_c:
-            print(sample.adress)
+#         print("apprentissage --------------")
+#         for sample in learn_c:
+#             print(sample.adress)
 
-        print("validation ------------")
-        for sample in validation_c:
-            print(sample.adress)
+#         print("validation ------------")
+#         for sample in validation_c:
+#             print(sample.adress)

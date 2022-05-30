@@ -9,8 +9,6 @@ def segmentation_image(sample_img):
     
     change_bg_segment = change_background_mp.SelfieSegmentation()
     
-
-    
     RGB_sample_img = cv2.cvtColor(sample_img, cv2.COLOR_BGR2RGB)
     
     result = change_bg_segment.process(RGB_sample_img)
@@ -25,10 +23,10 @@ def segmentation_image(sample_img):
     plt.figure()
     plt.imshow(output_image[:,:,::-1]);plt.title("Output Image");plt.axis('off');
     plt.show()
-    cv2.imwrite('Resultats_segmentation/image_segmentee.jpg',output_image)
+    # cv2.imwrite('Resultats_segmentation/image_segmentee.jpg',output_image)
     return output_image
 
 
-sample_img = cv2.imread('./DB_RESIZED/jolyne_mainTete_1.jpg')
-segmentation_image(sample_img)
+# sample_img = cv2.imread('./DB_RESIZED/jolyne_mainTete_1.jpg')
+# segmentation_image(sample_img)
 

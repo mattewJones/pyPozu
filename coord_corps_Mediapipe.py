@@ -110,11 +110,11 @@ def display_coords(image):
     
 
 
-if __name__=="__main__" :
-    # TEST 
-    file_name = os.path.join(os.path.dirname(__file__), 'DB_RESIZED/jolyne_mainshanches_2.jpg')
-    assert os.path.exists(file_name)
-    img = cv2.imread(file_name, -1)
+# if __name__=="__main__" :
+#     # TEST 
+#     file_name = os.path.join(os.path.dirname(__file__), 'DB_RESIZED/jolyne_mainshanches_2.jpg')
+#     assert os.path.exists(file_name)
+#     img = cv2.imread(file_name, -1)
 
-    display_coords(img)
+#     display_coords(img)
 
