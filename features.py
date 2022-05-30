@@ -80,7 +80,8 @@ eval_features_PCA=PCA.transform(eval_features_norm)
 
 def extract_ACP_feature(img):
 	"""
-	pour faire la classification d'autres images
+	pour faire la classification d'une image 
+	quelconque en-dehors de la base de données
 	"""
 	raw_feature=extract_feature(img)
 	PCA_feature=PCA.transform(s.transform(raw_feature))
