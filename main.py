@@ -1,3 +1,5 @@
+from numpy.linalg import norm
+
 from calcul_distances import *
 from classifier import *
 from coord_corps_Mediapipe import *
@@ -7,6 +9,8 @@ from load_db import *
 from preprocess import *
 from SB_hist import *
 from segmentation_Mediapipe import *
+from barycenters import calc_feature_bars
+
 
 
 
@@ -61,10 +65,17 @@ print("ETAPE - FEATURES TERMINEE")
 
 
 ## Evaluation ##########
+
 predicted_labels = classification(learn_features_PCA,learn_labels,eval_features_PCA)
 conf_mat = calcul_mat_conf(eval_labels,predicted_labels,labels)
 prec,recll,fscore,spp = evaluation_score(eval_labels,predicted_labels,labels)
 
+## Barycentres des attributs
+bars=calc_feature_bars(learn_features_PCA,learn_labels,labels)
+barDists=np.array([[norm(i-j) for i in bars] for j in bars])
+
+print('\nBarycenters distances : ')
+print(np.floor(barDists)) 
 print("\nMatrice de confusion : ")
 print(conf_mat)
 print('\nvraie classe : ')
@@ -75,6 +86,7 @@ print('\nF1 de chaque classe : ')
 print(fscore)
 print('\nF1 global : ')
 print(np.mean(fscore))
+
 
 
 print("ETAPE - EVALUATION TERMINEE")
