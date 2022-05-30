@@ -63,9 +63,20 @@ def save_all_feature_data(learn_features,learn_labels,eval_features,eval_labels)
 	save_feature(learn_features,learn_labels,Path("./learn.csv"))
 	save_feature(eval_features,eval_labels,Path("./eval.csv"))
 
+def load_feature(saveFile:Path):
+	DF=pd.read_csv(saveFile,index_col=0)
+	features=DF.to_numpy()
+	labels=DF.index #oui j'utilise la table dans le mauvais sens et alors ?
+	return features,labels
 
-
-
+def load_all_feature_data():
+	"""
+	lit les valeurs des attributs 
+	enregistrées dans un fichier csv
+	"""
+	learn_features,learn_labels=load_feature(Path("./learn.csv"))
+	eval_features,eval_labels=load_feature(Path("./eval.csv"))
+	return learn_features,learn_labels,eval_features,eval_labels
 
 
 # #liste des étiquettes
