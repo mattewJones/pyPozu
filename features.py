@@ -87,6 +87,7 @@ def extract_ACP_feature(img,PCA,s):
 	return PCA_feature
 
 
+
 def plotPCA(principalComponents_learn,principalComponents_eval,labels,learn_labels,eval_labels):
     teintes=np.linspace(0,0.8,len(labels))
     colors=[to_hex(hsv_to_rgb([t,1,1])) for t in teintes]
@@ -125,7 +126,50 @@ def plotPCA(principalComponents_learn,principalComponents_eval,labels,learn_labe
     ax.grid()
     fig.show()
 
-    return 0
+
+
+
+
+
+def plotFeatureProjection(i,j):
+	"""
+	projection dans le plan U_i, U_j
+	"""
+	teintes=np.linspace(0,0.8,len(labels))
+	colors=[to_hex(hsv_to_rgb([t,1,1])) for t in teintes]
+
+	fig = plt.figure()
+	ax = fig.add_subplot(1,1,1) 
+	ax.set_xlabel('Axe U%d' % i )
+	ax.set_ylabel('Axe U%d' % j )
+	ax.set_title('attributs (normalisés) dans un plan')
+
+	legendList=[]
+
+	#plot learn features
+	for color,label in zip(colors,labels) :
+		indicesToKeep=np.where(learn_labels==label)
+		ax.scatter(
+			learn_features_norm[indicesToKeep,i],
+			learn_features_norm[indicesToKeep,j],
+			marker='^', c=color, s=100
+		)
+		legendList.append(label+" (learn)")
+
+	#plot validation features
+	for color,label in zip(colors,labels) :
+		indicesToKeep=np.where(eval_labels==label)
+		ax.scatter(
+			eval_features_norm[indicesToKeep,i],
+			eval_features_norm[indicesToKeep,j],
+			marker='o', c=color, s=100
+		)
+		legendList.append(label+" (eval)")
+
+
+	ax.legend(legendList)
+	ax.grid()
+	fig.show()
              
 
 
