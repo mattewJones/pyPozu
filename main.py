@@ -65,10 +65,17 @@ predicted_labels = classification(learn_features_PCA,learn_labels,eval_features_
 conf_mat = calcul_mat_conf(eval_labels,predicted_labels,labels)
 prec,recll,fscore,spp = evaluation_score(eval_labels,predicted_labels,labels)
 
-print("Matrice de confusion : ")
+print("\nMatrice de confusion : ")
 print(conf_mat)
-print('\n\ntrue class : ', eval_labels)
-print('\n\n result     : ', predicted_labels)
+print('\nvraie classe : ')
+print(eval_labels)
+print('\nresultat     : ')
+print(predicted_labels)
+print('\nF1 de chaque classe : ')
 print(fscore)
+print('\nF1 global : ')
+print(np.mean(fscore))
+
+
 print("ETAPE - EVALUATION TERMINEE")
 
