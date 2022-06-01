@@ -1,0 +1,4 @@
+1- Il faut run le fichier windows
+2- Penser à mettre le son
+3- Quand la fenêtre s'ouvre il faut LOAD la database et Open une image à traiter
+4- Appuyer sur start va lancer le fonctionnement de l'app
