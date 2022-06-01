@@ -94,9 +94,8 @@ def extract_ACP_feature(img,PCA,s):
 	"""
 	pour faire la classification d'autres images
 	"""
-    
 	raw_feature=extract_feature(img)
-	PCA_feature=PCA.transform(s.transform(raw_feature))
+	PCA_feature=PCA.transform(s.transform(raw_feature.reshape(1, -1)))
 	return PCA_feature
 
 
