@@ -1,7 +1,12 @@
-from PIL import Image
 from pathlib import Path
-import numpy as np
-
+from PIL import Image
+from PIL.ImageOps import exif_transpose as fix_orientation
 
 def load_image_correctly(src:Path):
-	return np.array(Image.open(src))
+	'''
+	charge les images en prenant 
+	en compte leur orientation
+	'''
+	img = fix_orientation(Image.open(src))
+	return img
+

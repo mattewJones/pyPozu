@@ -31,7 +31,7 @@ print("ETAPE - CHARGEMENT ET PRE-TRAITEMENT TERMINEE")
 ## Attributs ############
 
 # drapeau de recalcul des attributs
-feature_calc_flag=False
+feature_calc_flag=True
 
 if feature_calc_flag :
 

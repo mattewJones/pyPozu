@@ -2,10 +2,10 @@
 
 import cv2
 from pathlib import Path
-from PIL import Image
-from PIL.ImageOps import exif_transpose as fix_orientation
-import numpy as np
+from load_image_correctly import load_image_correctly
 from tkinter.filedialog import askdirectory, Tk
+import numpy as np
+from PIL import Image
 import pickle
 import os
 
@@ -13,8 +13,7 @@ import os
 def resize_image(src: Path, dest: Path, size=(400, 600)):
     # j'utilise PIl pour ouvrir les images parce que ça accepte
     # les objets de Pathlib en entrée (plus simple)
-    img = fix_orientation(Image.open(src))
-    imgArr = np.array(img)
+    imgArr = np.array(load_image_correctly(src))
     resArr = cv2.resize(imgArr, size, interpolation=cv2.INTER_AREA)
     res = Image.fromarray(resArr)
     res.save(dest)

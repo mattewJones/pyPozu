@@ -4,6 +4,7 @@ from tkinter import*
 from tkinter.ttk import*
 from PIL import ImageTk, Image
 from Programme_pozu import*
+from load_image_correctly import load_image_correctly
 import pygame
 
 global left_path 
@@ -117,7 +118,7 @@ class Window(tk.Frame):
 
     def change_image(self,path):
         self.left_zone.destroy()
-        self.left_image_before = Image.open(path)
+        self.left_image_before = load_image_correctly(path)
         self.left_image_resize = self.left_image_before.resize((300,450), Image.ANTIALIAS)
         self.left_image = ImageTk.PhotoImage(self.left_image_resize)
         self.left_zone = Label(self.images_frame, image=self.left_image)
@@ -126,7 +127,7 @@ class Window(tk.Frame):
         
     def change_image_result(self,path):
         self.right_zone.destroy()
-        self.right_image_before = Image.open(path)
+        self.right_image_before = load_image_correctly(path)
         self.right_image_resize = self.right_image_before.resize((250,450), Image.ANTIALIAS)
         self.right_image = ImageTk.PhotoImage(self.right_image_resize)
         self.right_zone = Label(self.images_frame, image=self.right_image)
